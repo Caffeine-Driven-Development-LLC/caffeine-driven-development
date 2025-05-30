@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   // basePath: '/caffeine-driven-development',
-  transpilePackages: ['@ant-design', 'rc-util', 'rc-pagination', 'rc-picker', '@babel/runtime'], // Add antd related packages
+  transpilePackages: ['@ant-design', 'rc-util', 'rc-pagination', 'rc-picker'], // Add antd related packages
 };
 
 export default nextConfig;
