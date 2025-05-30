@@ -34,6 +34,7 @@ jobs:
 
       - name: Clean install dependencies
         run: |
+          npm install rc-util rc-picker
           npm install
 
       - name: Build with Next.js
