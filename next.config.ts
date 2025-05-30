@@ -5,8 +5,16 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  // basePath: '/caffeine-driven-development',
-  transpilePackages: ['@ant-design', 'rc-util', 'rc-pagination', 'rc-picker'], // Add antd related packages
+  basePath: '/caffeine-driven-development',
+  transpilePackages: ['antd', '@ant-design/*', 'rc-*'],
+  webpack: (config) => {
+    config.resolve.extensionAlias = {
+      '.js': ['.ts', '.tsx', '.js', '.jsx'],
+      '.mjs': ['.mts', '.mjs'],
+      '.cjs': ['.cts', '.cjs']
+    };
+    return config;
+  }
 };
 
 export default nextConfig;
