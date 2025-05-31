@@ -32,15 +32,15 @@ jobs:
         with:
           static_site_generator: next
 
+      - name: Clean install dependencies
+        run: |
+          npm ci
+          
       - name: Print Versions
         run: |
           node --version
           npx --no-install next -v
           npm -v
-
-      - name: Clean install dependencies
-        run: |
-          npm ci
 
       - name: Build with Next.js
         run: npm run build
