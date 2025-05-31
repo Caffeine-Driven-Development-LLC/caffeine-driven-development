@@ -3,10 +3,10 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   output: 'export',
   images: {
-    unoptimized: true
+    unoptimized: true,
   },
   basePath: '/caffeine-driven-development',
-  transpilePackages: ['@ant-design', 'rc-util', 'rc-pagination', 'rc-picker'], // Add antd related packages
+  transpilePackages: ['rc-util', 'rc-picker'],
 };
 
 export default nextConfig;
