@@ -41,7 +41,8 @@ jobs:
           node --version
           npx --no-install next -v
           npm -v
-
+          ls node_modules | grep "rc-"
+          
       - name: Build with Next.js
         run: npm run build
 
