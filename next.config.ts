@@ -6,6 +6,9 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   basePath: '/caffeine-driven-development',
+  experimental: {
+    optimizePackageImports: ["@chakra-ui/react"]
+  }
 };
 
 export default nextConfig;
