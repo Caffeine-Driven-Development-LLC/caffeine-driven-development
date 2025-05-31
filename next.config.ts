@@ -6,17 +6,7 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   basePath: '/caffeine-driven-development',
-  transpilePackages: [
-    "antd",
-    "@ant-design/icons",
-    "rc-util",
-    "rc-pagination",
-    "rc-picker",
-    "rc-notification",
-    "rc-tooltip",
-    "rc-tree",
-    "rc-table"
-  ],
+  transpilePackages: ['rc-util', 'rc-picker'],
 };
 
 export default nextConfig;

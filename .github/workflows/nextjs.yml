@@ -35,14 +35,6 @@ jobs:
       - name: Clean install dependencies
         run: |
           npm ci
-          
-      - name: Print Versions
-        run: |
-          node --version
-          npx --no-install next -v
-          npm -v
-          pwd
-          ls node_modules/rc-util/es/utils
 
       - name: Build with Next.js
         run: npm run build
