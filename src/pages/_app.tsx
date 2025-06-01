@@ -6,11 +6,17 @@ import {ColorModeProvider} from "@/components/ui/color-mode";
 const config = defineConfig({
   theme: {
     tokens: {
-      colors:{
-        primary: { value: "#0FEE0F" },
-        secondary: { value: "#EE0F0F" },
+      colors: {
       }
     },
+  },
+  globalCss: {
+    "html, body": {
+      margin: 0,
+      padding: 0,
+      fontFamily: "Roboto",
+      backgroundColor: "#cdc9c9",
+    }
   }
 })
 

@@ -1,15 +1,15 @@
-import {Box, Button, VStack} from "@chakra-ui/react";
+import {Box, Heading, Stack} from "@chakra-ui/react";
+import ProductsList from "@/components/products-list";
 
 export default function IndexPage() {
 
   return (
     <>
       <Box color="primary" backgroundColor="secondary">
-        <VStack>
-          text text
-          <Button>Click me</Button>
-          <Button>Click me</Button>
-        </VStack>
+        <Stack>
+          <Heading>Caffeine Driven Development</Heading>
+          <ProductsList />
+        </Stack>
       </Box>
     </>
   )
