@@ -11,7 +11,7 @@ const config = defineConfig({
     },
     tokens: {
       colors: {
-        primary: {value: "#000000"}
+        text: {value: "#000000"}
       }
     },
   },
@@ -23,7 +23,8 @@ const config = defineConfig({
       padding: 0,
       fontFamily: "Roboto",
       backgroundColor: "#cdc9c9",
-    }
+      color: "var(--colors-text)",
+    },
   }
 })
 
