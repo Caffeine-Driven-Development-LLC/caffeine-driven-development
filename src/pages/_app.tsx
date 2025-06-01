@@ -5,14 +5,21 @@ import {ColorModeProvider} from "@/components/ui/color-mode";
 
 const config = defineConfig({
   theme: {
+    breakpoints: {
+      sm: "0em",
+      lg: "50em",
+    },
     tokens: {
       colors: {
+        primary: {value: "#000000"}
       }
     },
   },
   globalCss: {
     "html, body": {
       margin: 0,
+      marginLeft: {sm: 5, lg: 20},
+      marginRight: {sm: 5, lg: 20},
       padding: 0,
       fontFamily: "Roboto",
       backgroundColor: "#cdc9c9",
