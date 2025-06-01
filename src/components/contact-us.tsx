@@ -1,15 +1,15 @@
-import {Heading, Link, Stack} from "@chakra-ui/react";
+import {Heading, Text, Link, Stack} from "@chakra-ui/react";
 
 export default function ContactUs() {
   return (
     <Stack>
       <Heading>Contact Us</Heading>
-      <Link
+      <Text><Link
         href="mailto:Support@caffeine-driven-development.com"
         color="text"
       >
         Support@caffeine-driven-development.com
-      </Link>
+      </Link></Text>
     </Stack>
   )
 }
