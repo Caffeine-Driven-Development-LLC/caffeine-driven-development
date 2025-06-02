@@ -5,8 +5,10 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/caffeine-driven-development',
-  transpilePackages: ['rc-util', 'rc-picker'],
+  // basePath: '/caffeine-driven-development',
+  experimental: {
+    optimizePackageImports: ["@chakra-ui/react"]
+  }
 };
 
 export default nextConfig;
