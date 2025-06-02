@@ -4,12 +4,14 @@ export default function ProductsList() {
   return (
      <Box>
       <Stack>
-        <Heading>Products</Heading>
+        <Heading size={{ lg: "5xl", sm: "3xl" }}>Products</Heading>
         <Box>
           <HStack>
             <Image src="AppTrackGhost.svg" height="40" alt="AppTrack Logo" />
             <Stack>
-              <Heading><Link
+              <Heading
+                size={{ lg: "4xl", sm: "2xl" }}
+              ><Link
                 href="https://getapptrack.com/"
                 color="text"
               >AppTrack</Link></Heading>

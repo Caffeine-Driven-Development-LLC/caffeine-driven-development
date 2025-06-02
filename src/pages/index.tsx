@@ -7,8 +7,11 @@ export default function IndexPage() {
 
   return (
     <Stack minHeight="100vh">
-      <Heading>Caffeine Driven Development</Heading>
-      <Stack flex={1}>
+      <Heading size={{ lg: "6xl", sm: "4xl" }} >Caffeine Driven Development</Heading>
+      <Stack
+        style={{paddingTop: 50, paddingBottom: 50, gap: 25}}
+        flex={1}
+      >
         <Text>
           We are a small business focused on small tech, lightweight, efficient, and no-nonsense software solutions
           with no hidden agendas. Our aim is not to become the next big tech company, but to use our expertise as
@@ -18,7 +21,7 @@ export default function IndexPage() {
         <ProductsList />
         <ContactUs />
       </Stack>
-      <Footer/>
+      <Footer />
     </Stack>
   )
 }
