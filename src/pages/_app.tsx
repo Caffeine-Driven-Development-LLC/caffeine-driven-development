@@ -32,15 +32,13 @@ const system = createSystem(defaultConfig, config)
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <>
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      </Head>
-      <ChakraProvider value={system}>
-        <ColorModeProvider>
-          <Component {...pageProps} />
-        </ColorModeProvider>
-      </ChakraProvider>
-    </>
+    <ChakraProvider value={system}>
+      <ColorModeProvider>
+        <Head>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        </Head>
+        <Component {...pageProps} />
+      </ColorModeProvider>
+    </ChakraProvider>
   )
 }

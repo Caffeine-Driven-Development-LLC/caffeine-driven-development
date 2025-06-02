@@ -5,7 +5,6 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  // basePath: '/caffeine-driven-development',
   experimental: {
     optimizePackageImports: ["@chakra-ui/react"]
   }
