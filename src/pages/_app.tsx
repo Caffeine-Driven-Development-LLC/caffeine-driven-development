@@ -12,6 +12,10 @@ const config = defineConfig({
     tokens: {
       colors: {
         text: {value: "#000000"}
+      },
+      fonts: {
+        heading: {value: "Roboto, sans-serif"},
+        body: {value: "Roboto, sans-serif"}
       }
     },
   },
@@ -21,7 +25,6 @@ const config = defineConfig({
       marginLeft: {sm: 5, lg: 20},
       marginRight: {sm: 5, lg: 20},
       padding: 0,
-      fontFamily: "Roboto",
       backgroundColor: "#cdc9c9",
       color: "var(--colors-text)",
     },
