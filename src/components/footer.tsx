@@ -7,7 +7,7 @@ export default function Footer() {
          Built in Chicago, Illinois, fueled by passion and coffee.
        </Text>
        <Text>
-         © 2025 Caffeine Driven Development LLC.
+         © 2026 Caffeine Driven Development LLC.
        </Text>
      </Stack>
   )
